@@ -87,10 +87,7 @@ class PostTest(APITestCase):
         for comment in response.data:
             comment_ids.append(comment.get("id"))
         self.assertEqual(
-            comment_ids,
-            [
-                self.comment1.id,
-            ],
+            comment_ids, [self.comment1.id,],
         )
 
     def test_create_comment(self):

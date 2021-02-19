@@ -9,9 +9,19 @@ class CommentInline(admin.StackedInline):
 
 
 class PostAdmin(admin.ModelAdmin):
-    fields = ["author", "title", "creation_date", "upvotes_amount", ]
-    readonly_fields = ["creation_date", "upvotes_amount", ]
-    inlines = [CommentInline, ]
+    fields = [
+        "author",
+        "title",
+        "creation_date",
+        "upvotes_amount",
+    ]
+    readonly_fields = [
+        "creation_date",
+        "upvotes_amount",
+    ]
+    inlines = [
+        CommentInline,
+    ]
 
 
 admin.site.register(Post, PostAdmin)
