@@ -11,7 +11,6 @@ services:
     command: >
       sh -c "python3 manage.py migrate &&
              python3 manage.py test &&
-             python3 manage.py filldb &&
              python3 manage.py runserver 0.0.0.0:8000"
 
     env_file:
