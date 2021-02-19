@@ -1,4 +1,4 @@
-# dt_test_task
+# Test challenge for DevelopsToday
 Setting up development version of this project:
 1) Clone the repository using command:
    `git clone https://github.com/lncr/dt_test_task.git .`
@@ -6,5 +6,12 @@ Setting up development version of this project:
    `docker-compose up --build`
 3) All set. Now your server is running at http://0.0.0.0:8000
 
+
 If you want to add some dummy data for testing simply run this command:
 `docker exec {name of your app container} ./manage.py filldb`
+
+Deploy link:
+https://dttesttaskapp.herokuapp.com/
+
+Postman collection for testing:
+https://documenter.getpostman.com/view/10265507/TWDWKdMy
