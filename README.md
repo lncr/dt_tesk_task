@@ -5,3 +5,6 @@ Setting up development version of this project:
 2) Start the project with docker-compose:
    `docker-compose up --build`
 3) All set. Now your server is running at http://0.0.0.0:8000
+
+If you want to add some dummy data for testing simply run this command:
+`docker exec {name of your app container} ./manage.py filldb`
