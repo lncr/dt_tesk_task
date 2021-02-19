@@ -7,11 +7,11 @@ Setting up development version of this project:
 3) All set. Now your server is running at http://0.0.0.0:8000
 
 
-If you want to add some dummy data for testing simply run this command:
+Then add some dummy data for testing, run this command:
 `docker exec {name of your app container} ./manage.py filldb`
 
 Deploy link:
 https://dttesttaskapp.herokuapp.com/
 
-Postman collection for testing:
+Postman collection link:
 https://documenter.getpostman.com/view/10265507/TWDWKdMy
